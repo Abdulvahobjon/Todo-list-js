@@ -1,0 +1,89 @@
+body,
+html {
+    background: #1e272e;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo  {
+    background: #ffbe76;
+    border-radius: 9px;
+    padding: 3px 7px 11px 7px;
+    max-height: 75vh;
+    width: 333px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.todo >div:first-child {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.todo >div:first-child>* {
+    border-radius: 5px;
+    padding: 9px;
+    border: 2px solid #f0932b;
+    margin: 3px;
+}
+
+.todo >div:first-child>button {
+    background: #f0932b;
+    border: none;
+    cursor: pointer;
+}
+
+.todo >div:first-child>button:hover {
+    background: #e74c3c;
+    border: none;
+}
+
+.todo >div:first-child>button:active {
+    background: #c0392b;
+    border: none;
+}
+
+#taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList > div{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0 3px 0 15px;
+    background: #ecf0f1;
+    word-break: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskItemDelete {
+    border: none;
+    padding: 15px;
+    margin: 0;
+    border-radius: 50%;
+}
+
+#taskList button {
+    padding: 5px;
+    cursor: pointer;
+}
+#taskItem{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
